@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                max-width: 800px;
+                margin-left: auto;
+                padding-left: 5px;
+                padding-right: 5px;
+                margin-right: auto;
+                margin-top: 5em;
+                margin-bottom: 5em;
+                font-size: 130%;
+                background-color: #fcfcfc;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-family: sans;
+            }
+            .project-menu {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+            }
+            .card {
+                flex: 0 1 30%;
+                min-width: 200px;
+                
+                text-decoration: none;
+                color: black;
+                background-color: #ffffff;
+                border: 1px solid black;
+                border-radius: 20px;
+                
+            }
+            .card-inner {
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+        </style>
+        <title>vgteam</title>
+    </head>
+    <body>
+        <h1>vgteam</h1>
+        <p><b>vgteam</b> is a collaboration working on tools for graph-based genomics.</p>
+        <p>Choose from any of the fine vgteam products below:</p>
+        <div class="project-menu">
+            <a class="card" href="https://github.com/vgteam/vg">
+                <div class="card-inner">
+                    <h1>vg</h1>
+                    <p>vg, the variation graph toolkit, allows for constructing, manipulating, and analyzing genome graphs.</p>
+                </div>
+            </a>
+            <a class="card" href="https://github.com/vgteam/toil-vg">
+                <div class="card-inner">
+                    <h1>toil-vg</h1>
+                    <p>toil-vg is a wrappr around vg which uses UCSC's Toil workflow manager to parallelize vg analyses in the cloud.</p>
+                </div>
+            </a>
+            <a class="card" href="https://github.com/vgteam/haplotype-aware-mapping-paper">
+                <div class="card-inner">
+                    <h1>HAMP</h1>
+                    <p>HAMP contains tools for evaluating vg's haplotype-aware mapping capabilities</p>
+                </div>
+            </a>
+        </div>
+    </body>
+</html>
